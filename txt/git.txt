@@ -1,0 +1,15 @@
+commands:
+  Os seguintes comandos integrados ao git estão disponíveis.
+
+  COMMAND
+    git init                                Inicializa o git no repositorio
+    git clone <URL>                         Copiar repositorio remoto
+    git status                              Lista as modificacoes atuais do repositorio
+    git log                                 Lista historico de commits
+    git add <nome-arquivo>                  Adiciona o arquivo do palco stage
+    git reset <nome-arquivo>                Remove o arquivo do palco stage
+    git branch                              Lista todas as branchs locais
+    git branch <nome-branch>                Cria uma nova branch
+    git checkout <nome-branch>              Entra na branch
+    git pull origin <nome-branch>           Puxa as modificagoes
+    git push origin <nome-branch>           Envia as modificacoes

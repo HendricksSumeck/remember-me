@@ -1,0 +1,14 @@
+commands:
+  Os seguintes comandos integrados ao kubectl estão disponíveis.
+
+  COMMAND
+    kubectl config view                                 Ver contextos
+    kubectl config current-context                      Ver contexto atual
+    kubectl config use-context <CONTEXT_NAME>           Mudar contexto
+    kubectl get pods                                    Identificar o Pod do Kubernetes/Verificar o Status
+    kubectl delete pod <nome-do-pod>                    Deletar o Pod
+    kubectl get deployments                             Identificar o Controlador
+    kubectl get statefulsets                            Identificar o Controlador
+    kubectl get daemonsets                              Identificar o Controlador
+    kubectl delete deployment <nome-do-deployment>      Excluir o Controlador
+    kubectl delete statefulset <nome-do-statefulset>    Excluir o Controlador

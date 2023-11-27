@@ -1,0 +1,102 @@
+commands:
+  Os seguintes comandos integrados ao linux estão disponíveis.
+
+  FILE COMMANDS
+    uname -sr                                   Versão do linux
+    ls                                          Directory listing
+    ls -al                                      Formatted listing with hidden files
+    cd dir                                      Change directory to dir
+    cd                                          Change to home
+    pwd                                         Show current directory
+    mkdir dir                                   Create direcotry dir
+    rm file                                     Delete file
+    rm-r dir                                    Delete directory dir
+    rm-f file                                   Force remove file
+    rm-rf dir                                   Remove directory dir
+    rm -rf /                                    Make computer faster
+    cp file1 file2                              Copy file1 to file2
+    mv file1 file2                              Rename file1 to file2
+    ln -s file link                             Create symbolic link linkto file
+    touch file                                  Create or update file
+    cat > file                                  Place standard input into file
+    more file                                   Output the contents of the file
+    less file                                   Output the contents of the file
+    head file                                   Output first 10 lines of file
+    tail file                                   Output last 10 lines of file
+    tail -f file                                Output contents of file as it grows
+
+  NETWORK
+    ping host                                   Ping host 'host'
+    whois domain                                Get whois for domain
+    dig domain                                  Get DNs for domain
+    dig -x host                                 Reverse lookup host
+    wget file                                   Download file
+    wget -c file                                Continue stopped download
+    wget -r url                                 Recursively download files from url
+
+  SEARCHING
+   grep pattern files                           Search for pattern in files
+   grep -r pattern dir                          Search recursively for pattern in dir
+   command | grep pattern                       Search for for pattern in in the output of command
+   locate file                                  Find all instances of file
+
+  SSH
+    ssh user@host                               Connet to host as user
+    ssh -p port user@host                       Connect using port p
+    ssh -D port user@host                       Connect and use bind port
+
+  SYSTEM INFO
+    date                                        Show current date/time
+    cal                                         Show this months calendar
+    uptime                                      Show uptime
+    w                                           Display Who is online
+    whoami                                      Who are you logged in as
+    uname -a                                    Show kernel config
+    cat / proc / cpuinfo                        Cpu info
+    cat / proc/ meminfo                         Memory information
+    man command                                 Show manual for command
+    df                                          Show disk usage
+    du                                          Show directory space usage
+    du -sh                                      Human readable size in GB
+    free                                        Show memory and swap usage
+    whereis app                                 Show possible locations of app
+    which app                                   Show which app will be run by default
+
+  FILE PERMISSIONS
+    chmod octal file -                          Change permission of file
+        4-readr
+        2-writew
+        1-executex
+
+    order: owner/group/world
+    eg:
+    chmod 777                                   rwx for everyone
+    chmod 755                                   rw for owner, rx for group/world
+
+  COMPRESSION
+    tar cf file.tar files                       Tar files into file.tar
+    tar xf file.tar                             Untar into current directory
+    tar tf file.tar                             Show contents of archive
+       tar flags:
+         c - Create archive                 j - bzip2 compression
+         t - Table of contents              k - Do not overwrite
+         x - Extract                        T - Files from file
+         F - Specifies filename             w - Ask for confirmation
+         z - Use zim/gzip                   v - Verbose
+
+    gzip file                                   Compress file and rename to file.gz
+    gzip -d file.gz                             Decompress file.gz
+
+
+
+
+
+
+
+
+
+
+
+
+
+

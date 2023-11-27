@@ -1,0 +1,9 @@
+commands:
+  Os seguintes comandos gerais.
+
+  COMMAND
+    GET-CimInstance -query "SELECT * from Win32_DiskDrive"          Ver discos montados
+    wmic diskdrive list brief                                       Ver discos montados
+    code $PROFILE                                                   Abrir profile do terminal no vscode
+    dmesg |grep 9p                                                  Listar logs ubuntu
+    dmesg                                                           Listar logs ubuntu

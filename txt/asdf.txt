@@ -1,0 +1,9 @@
+commands:
+  Os seguintes comandos integrados ao asdf estão disponíveis.
+
+  COMMAND
+    asdf list                               Listar plugins
+    asdf plugin add                         Adicinar plugins
+    asdf list-all <stak>                    Listar todas as versões
+    asdf install <stack><version>           Instalar a versão
+

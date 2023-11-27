@@ -1,0 +1,13 @@
+commands:
+  Os seguintes comandos integrados ao conda estão disponíveis.
+
+  COMMAND
+    conda env list                          Listar ambientes
+    conda create --name <name>              Criar novo ambiente
+    conda create --name <name> python=3.8   Criar novo ambiente
+    conda activate <name>                   Mudar ambiente
+    conda deactivate                        Voltar ambiente base
+    conda env remove --name <name>          Remover ambiente
+    conda install <name>                    Instalar pacote
+    conda update <name>                     Atualizar um pacote
+    conda remove <name>                     Remova pacotes

@@ -1,0 +1,6 @@
+commands:
+  Os seguintes comandos integrados ao dotnet estão disponíveis.
+
+  COMMAND
+    dotnet --list-sdks                      Exiba os SDKs instalados.
+    dotnet --list-runtimes                  Exiba os runtimes instalados.

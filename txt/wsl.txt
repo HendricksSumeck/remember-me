@@ -1,0 +1,11 @@
+commands:
+  Os seguintes comandos integrados ao wsl estão disponíveis.
+
+  COMMAND
+    wsl --list --verbose                                                         Listar maquinas wsl
+    wsl --export <distribution name> <export file name>                          Exporte o ambiente
+    wsl --export Ubuntu ubuntu.tar                                               Exporte o ambiente
+    wsl --import <new distribution name> <install location> <export file name>   Criar novas instâncias da distribuição
+    wsl --import UbuntuDev1 .\UbuntuDev1 ubuntu.tar                              Criar novas instâncias da distribuição
+
+

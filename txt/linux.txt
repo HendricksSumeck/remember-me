@@ -1,0 +1,67 @@
+commands:
+  Os seguintes comandos integrados ao linux estão disponíveis.
+
+  COMMAND
+    uname -sr                                   Versão do linux
+    usame -a                                    Versão do linux
+    sudo chmod 777 <nome da pasta>              Dar full acesso a pasta/arquivo
+    sudo apt update && sudo apt upgrade         Atualizar e atualizar pacotes
+    rm <nome do arquivo>                        Remover arquivo
+    ls                                          Lista arquivos e diretórios no diretório atual
+    mv                                          Move ou renomeia arquivos e diretórios
+    ssh                                         Conecta-se a uma máquina remota usando protocolo SSH
+    cd                                          Muda o diretório atual
+    cat                                         Concatena e exibe o conteúdo do arquivo
+    sudo                                        Executa um comando com privilégios de root/admin
+    pwd                                         Imprime o diretório de trabalho atual
+    grep                                        Procura um padrão especificado em arquivos
+    top                                         Exibe o uso de recursos do sistema e processos em execução
+    mkdir                                       Cria um novo diretório
+    find                                        Pesquisa arquivos e diretórios
+    wget                                        Baixa arquivos da web
+    rm                                          Remove arquivos e diretórios
+    chmod                                       Altera as permissões de arquivos e diretórios
+    tar                                         Arquiva arquivos e diretórios em um único arquivo
+    cp                                          Copia arquivos e diretórios
+    chown                                       Altera a propriedade dos arquivos
+    gzip                                        Compacta arquivos usando o algoritmo gzip
+
+  FILE COMMANDS
+    uname -sr                                   Versão do linux
+    ls                                          Directory listing
+    ls -al                                      Formatted listing with hidden files
+    cd dir                                      Change directory to dir
+    cd                                          Change to home
+    pwd                                         Show current directory
+    mkdir dir                                   Create direcotry dir
+    rm file                                     Delete file
+    rm-r dir                                    Delete directory dir
+    rm-f file                                   Force remove file
+    rm-rf dir                                   Remove directory dir
+    rm -rf /                                    Make computer faster
+    cp file1 file2                              Copy file1 to file2
+    mv file1 file2                              Rename file1 to file2
+    ln -s file link                             Create symbolic link linkto file
+    touch file                                  Create or update file
+    cat > file                                  Place standard input into file
+    more file                                   Output the contents of the file
+    less file                                   Output the contents of the file
+    head file                                   Output first 10 lines of file
+    tail file                                   Output last 10 lines of file
+    tail -f file                                Output contents of file as it grows
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+commands:
+  Os seguintes comandos integrados ao docker estão disponíveis.
+
+  COMMAND
+    docker run <nome>                           Execute um contêiner a partir de uma imagem
+    docker build                                Construa uma imagem a partir de um Dockerfile
+    docker pull                                 Extraia uma imagem de um registro
+    docker push                                 Enviar uma imagem para um registro
+    docker images                               Liste todas as imagens disponíveis em sua máquina
+    docker ps                                   Listar todos os contêineres em execução
+    docker stop <container_nome>                Iniciar um contêiner parado
+    docker start <container_nome>               Reinicie um contêiner em execução
+    docker restart <container_nome>             Restart a running container
+    docker kill <container_nome>                Parar à força um contêiner em execução
+    docker rm <container_nome>                  Remover um contêiner parado
+    docker rmi <imagem_nome>                    Remova uma imagem da sua máquina
+    docker exec                                 Execute um comando em um contêiner em execução
+    docker logs                                 Ver os logs de um contêiner
+    docker inspect <container_nome>             Inspecione um contêiner ou imagem
+    docker cp                                   Copie arquivos entre o contêiner e seu sistema local
+    docker system prune                         Remover tudo do sistema docker
+    docker save                                 Salvar uma imagem em/de um arquivo tar
+    docker load                                 Carregar uma imagem para/de um arquivo tar
+
+
+
+
+
+
+
+
+
+
