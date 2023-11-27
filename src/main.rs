@@ -1,26 +1,19 @@
-use std::env;
-use remember_me::{RememberMe};
-
+use clap::{Arg, Command};
+use remember_me::RememberMe;
 
 fn main() {
     let rememberme = RememberMe::new().expect("Couldn't create the todo instance");
 
-    let args: Vec<String> = env::args().collect();
+    let matches = Command::new("RememberMe")
+        .version("1.1")
+        .author("Hendrick Sumeck <hsumeck@gmail.com>")
+        .arg(Arg::new("command").short('c').long("command"))
+        .get_matches();
 
-    if args.len() > 1 {
-        let command = &args[1];
-        match &command[..] {
-            "asdf" => rememberme.read_and_print_file(command),
-            "conda" => rememberme.read_and_print_file(command),
-            "docker" => rememberme.read_and_print_file(command),
-            "dotnet" => rememberme.read_and_print_file(command),
-            "general_linux" => rememberme.read_and_print_file(command),
-            "geral" => rememberme.read_and_print_file(command),
-            "git" => rememberme.read_and_print_file(command),
-            "kubectl" => rememberme.read_and_print_file(command),
-            "linux" => rememberme.read_and_print_file(command),
-            "wsl" => rememberme.read_and_print_file(command),
-            "help" | "--help" | "-h" | _ => rememberme.help()
+    if let Some(command) = matches.get_one::<String>("command") {
+        match command.as_str() {
+            "asdf" | "conda" | "docker" | "dotnet" | "general_linux" | "geral" | "git" | "kubectl" | "linux" | "wsl" => rememberme.read_and_print_file(command),
+            "help" | "--help" | "-h" | _ => rememberme.help(),
         }
     } else {
         rememberme.help();
